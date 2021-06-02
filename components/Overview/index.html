@@ -16,10 +16,13 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
           <span class="navbar-toggler-icon">visao geral</span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
 
-                <a class="nav-item nav-link" href="#"> <button class="btn btn-primary" id="btn-overview-create-code">Criando c&oacute;digo <abbr title="JavaScript">JS</abbr></button>
+                <a class="nav-item nav-link" href="#">
+                    <button class="btn btn-primary" id="btn-overview-create-code">Criando c&oacute;digo <abbr title="JavaScript">JS</abbr></button>
+
                     <div class="modal fade" id="modal-overview-create-code">
                         <div class="modal-dialog">
                             <div class="modal-content">
@@ -29,9 +32,7 @@
                                 </div>
 
                                 <div class="modal-body ">
-
                                     <h2>Criando e adicionando <abbr title="JavaScript">JS</abbr> a uma P&aacute;gina da <abbr title="World Wide Web">Web</abbr></h2>
-
                                     <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
 
                                     <p>
@@ -40,21 +41,17 @@
 
                                     <div class="content">
                                         <pre class="criando-codigo-js">
-                                         <code>
-                                          <p>&#60;html&#62;</p>
-            
-                                            <p> &#60;head&#62;</p>
-                                            <p> &#60;&#47;head&#62;</p>
-            
-                                           <p> &#60;body&#62;</p>
-                                           <p> &#60;script&#62;</p> 
-            
-                                          <p>  document&#46;write&#40;&#34;Ola Mundo&#33;&#34;&#41;&#59;</p> 
-            
-                                         <p> &#60;&#47;script&#62;</p>
-                                         <p>&#60;&#47;body&#62;</p>
-                                      </code>
-                                      </pre>
+                                            <code>
+                                                <p>&#60;html&#62;</p>
+                                                <p> &#60;&#47;head&#62;</p>            
+                                                <p> &#60;body&#62;</p>
+                                                <p> &#60;script&#62;</p>      
+                                                <p>  document&#46;write&#40;&#34;Ola Mundo&#33;&#34;&#41;&#59;</p> 
+                                                <p> &#60;&#47;script&#62;</p>
+                                                <p>&#60;&#47;body&#62;</p>
+                                            </code>
+                                        </pre>
+
                                         <p>Resultado&#58; Ol&aacute; Mundo&#33;</p>
                                     </div>
 
@@ -62,14 +59,17 @@
                                         &ensp;No c&oacute;digo acima, o c&oacute;digo <abbr title="JavaScript">JS</abbr> est&aacute; inclu&iacute;do entre a tag <code>&#60;script&#62;</code>. <br /> O m&eacute;todo <code>document&#46;write&#40;&#41;</code>                                        &oacute; usado para imprimir na tela.
                                     </p>
                                 </div>
+
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
                                 </div>
                             </div>
                         </div>
-                    </div> <span class="sr-only">(Página atual)</span></a>
+                    </div>
+                </a>
 
-                <a class="nav-item nav-link" href="#"> <button class="btn btn-primary" id="btn-overview-external-code">Vinculando c&oacute;digo <abbr
+                <a class="nav-item nav-link" href="#">
+                    <button class="btn btn-primary" id="btn-overview-external-code">Vinculando c&oacute;digo <abbr
                     title="JavaScript">JS</abbr> Externo</button>
                     <div class="modal fade" id="modal-overview-external-code">
                         <div class="modal-dialog">
@@ -80,9 +80,7 @@
                                 </div>
 
                                 <div class="modal-body ">
-
                                     <h2>Incluindo um arquivo <abbr title="JavaScript">JS</abbr> Externo</h2>
-
                                     <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
 
                                     <p>
@@ -93,22 +91,17 @@
 
                                     <div class="content">
                                         <pre class="arquivo-externo">
-                               <code>
-                                <p>&#60;html&#62;</p>
-    
-                                 <p>&ensp;&#60;head&#62;</p>
-                                 <p>&ensp;&#60;&#47;head&#62;</p>
-    
-                                  <p>&#60;body&#62;</p>
-                                <p>&ensp;&ensp;&ensp;&#60;script&#61; &#34;my&#95;javascript&#46;js&#62;</p> 
-    
-                              <p>&ensp;&ensp;&ensp;&ensp;&#60;&#47;script&#62;</p>
-                               <p>&ensp;&ensp;&#60;&#47;body&#62;</p>
-    
-                            </code>
-                                </pre>
+                                            <code>
+                                                <p>&#60;html&#62;</p>
+                                                <p>&ensp;&#60;head&#62;</p>
+                                                <p>&ensp;&#60;&#47;head&#62;</p>
+                                                <p>&#60;body&#62;</p>
+                                                <p>&ensp;&ensp;&ensp;&#60;script&#61; &#34;my&#95;javascript&#46;js&#62;</p>                        
+                                                <p>&ensp;&ensp;&ensp;&ensp;&#60;&#47;script&#62;</p>
+                                                <p>&ensp;&ensp;&#60;&#47;body&#62;</p>
+                                            </code>
+                                        </pre>
                                     </div>
-
 
                                     <p>Resultado&#58; Ol&aacute; Mundo&#41;</p>
 
@@ -117,6 +110,7 @@
                                         na mesma pasta que o arquivo <abbr title="HyperText Markup Language">html</abbr>, para fornecer o caminho do arquivo relativo ao arquivo <abbr title="HyperText Markup Language">html</abbr>.
                                     </p>
                                 </div>
+
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
                                 </div>
@@ -125,7 +119,9 @@
                     </div>
                 </a>
 
-                <a class="nav-item nav-link" href="#"><button class="btn btn-primary" id="btn-overview-comment-js">Coment&aacute;rios JavaScript</button>
+                <a class="nav-item nav-link" href="#">
+                    <button class="btn btn-primary" id="btn-overview-comment-js">Coment&aacute;rios JavaScript</button>
+
                     <div class="modal fade" id="modal-overview-comment-js">
                         <div class="modal-dialog">
                             <div class="modal-content">
@@ -133,45 +129,44 @@
                                     <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
                                     <h4 class="modal-title">Fundamentos JavaScript</h4>
                                 </div>
-            
+
                                 <div class="modal-body ">
-            
                                     <h2>Fazendo um coment&aacute;rio no c&oacute;digo JavaScript</h2>
-            
                                     <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
-            
+
                                     <p>
                                         &ensp;As linhas podem ser comentadas dentro do c&oacute;digo Javascript de duas maneiras&#58;
                                     </p>
-            
+
                                     <div class="content">
-                                        <pre class="comentario">
-                                       <code>
-                                       <p>&ensp;&#47;&#47;Este &eacute; um coment&aacute;rio de linha &uacute;nica</p>
-            
-                                      <p>&ensp;&#47;&#42;Este &eacute; um</p>
-                                       <p>coment&aacute;rio de</p>
-                                       <p>varias linhas &#42;&#47;</p>
-                                    </code>
-                                    </pre>
+                                        <pre class="comentario">                                 
+                                            <code>                                     
+                                                <p>&ensp;&#47;&#47;Este &eacute; um coment&aacute;rio de linha &uacute;nica</p>                                               
+                                                <p>&ensp;&#47;&#42;Este &eacute; um</p>
+                                                <p>coment&aacute;rio de</p>
+                                                <p>varias linhas &#42;&#47;</p>
+                                            </code>
+                                        </pre>
                                     </div>
-            
+
                                     <p>
                                         &ensp;Os coment&aacute;rios podem ser usados para melhorar a legibilidade de seu c&oacute;digo e fazer com que o navegador ignore o c&oacute;digo não utilizado.
                                     </p>
                                 </div>
+
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
                                 </div>
                             </div>
                         </div>
-                    </div></a>
+                    </div>
+                </a>
 
             </div>
         </div>
     </nav>
-    <img src="../../img/visao_geral.jpg" alt="logo do Javascript" class="img-body">
 
+    <img src="../../img/visao_geral.jpg" alt="logo do Javascript" class="img-body">
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -195,6 +190,7 @@
             });
         });
     </script>
+
 </body>
 
 </html>
