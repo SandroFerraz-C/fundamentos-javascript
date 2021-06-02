@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../../index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon">Objetos</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+
+                <a class="nav-item nav-link" href="#"> <button class="btn btn-primary" id="btn-objetcts-introduction">Introdu&ccedil;&atilde;o</button>
+                    <div class="modal fade" id="modal-objetcts-introduction">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                                    <h4 class="modal-title">Fundamentos JavaScript</h4>
+                                </div>
+
+                                <div class="modal-body ">
+
+                                    <h2>Objetos &#40;Introdu&ccedil;&atilde;o&#41;</h2>
+
+                                    <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
+
+                                    <p>
+                                        &ensp;Um objeto &eacute; uma cole&ccedil;&atilde;o de dados e&#47;ou funcionalidades relacionadas &#40;que geralmente consistem em diversas variáveis e fun&ccedil;&otilde;es &#151;&#151; que s&atilde;o chamadas de propriedades e m&eacute;todos quando
+                                        est&atilde;o dentro de objetos&#41;. Exemplo&#58;
+                                    </p>
+
+                                    <div class="content">
+
+                                        <pre>
+                                            <code>
+                                                <p>var carro &#61; &#123;</p>
+                                                <p>marca&#58; &quot;Ford&quot;, Modelo&#58; &quot;Mustang&quot;,</p>
+                                                <p>tipo&#58; &quot;Coupe&quot;, tamanhoMotor&#58; 5.2</p>                               
+                                                <p>&#125;</p>
+                                            </code>
+                                        </pre>
+                                    </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="nav-item nav-link" href="#"><button class="btn btn-primary"
+                        id="btn-objetcts-Properties-And-Methods">Propriedades e M&eacute;todos</button>
+                    <div class="modal fade" id="modal-objetcts-Properties-And-Methods">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                                    <h4 class="modal-title">Fundamentos JavaScript</h4>
+                                </div>
+
+                                <div class="modal-body ">
+
+                                    <h2>Propriedades e m&eacute;todos de objetos</h2>
+
+                                    <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
+
+                                    <p>
+                                        &ensp;Propriedades do objeto&#58;<br /> Os p&acirc;rametros do objeto
+                                        &#40;variáveis&#41; podem ser acessados das seguinte maneira&#58;
+                                    </p>
+
+                                    <div class="content">
+                                        <pre>
+                             <code>
+                                <p>var carro &#61; &#123;</p>
+                                <p>marca&#58; &quot;Ford&quot;, Modelo&#58; &quot;Mustang&quot;,</p>
+                                <p>tipo&#58; &quot;Coupe&quot;, tamanhoMotor&#58; 5.2</p>
+                                <p>&#125;</p>
+        
+                              <p>var x &#61; carro&#46;marca&#59;</p>
+                              <p>var x &#61; carro&#91;&#39;marca&#39;&#93;&#59;</p>
+                          </code>
+                          </pre>
+                                    </div>
+
+                                    <p>
+                                        M&eacute;todos de objeto&#58; <br /> Os m&eacute;todos de objeto podem ser
+                                        aessados da seguinte maneira&#58;
+                                    </p>
+
+                                    <div class="content">
+                                        <pre>
+                           <code>
+                            <p>NomeObjeto&#46;nomeMetodo&#40;&#41;&#59;</p>
+        
+                        </code>
+                        </pre>
+                                    </div>
+
+                                    <p>
+                                        Para acessar os dois par&acirc;metros e os m&eacute;todos, o operador ponto
+                                        &#40;&#39;&#46;&#39;&#41; &eacute; muito &uacute;til.
+                                    </p>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="nav-item nav-link disabled" href="#"><button class="btn btn-primary"
+                        id="btn-objetcts-creating-object">Criando objetos</button>
+                    <div class="modal fade" id="modal-objetcts-creating-object">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                                    <h4 class="modal-title">Fundamentos JavaScript</h4>
+                                </div>
+
+                                <div class="modal-body ">
+
+                                    <h2>Criando objetos</h2>
+
+                                    <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
+
+                                    <p>
+                                        &ensp;Depois de ter seu construtor de objetos, o comando <code>'new'</code> pode
+                                        ser usado para criar novos objetos&#58;
+                                    </p>
+
+                                    <div class="content">
+                                        <pre>
+                           <code>
+                            <p>var carro &#61; &#123;</p>
+                            <p>marca&#58; &quot;Ford&quot;, Modelo&#58; &quot;Mustang&quot;,</p>
+                            <p>tipo&#58; &quot;Coupe&quot;, tamanhoMotor&#58; 5.2</p>
+                            <p>&#125;</p>
+        
+                            <p>var carro&#95;2 &#61; new carro &#40;&quot;Chevrolet&quot;, &quot;Camaro&quot;,  6&#46;2&#41;&#59;</p>
+                            <p>document&#46;write&#40;carro&#95;2&#46;modelo&#41;&#59;</p>
+        
+                            <p>&#47;&#47;Output&#58; Camaro</p>
+                          
+                            <p>document&#46;write&#40;carro&#95;2&#46;tamanhoMotor&#41;&#59;</p>
+        
+                            <p>&#47;&#47;Output&#58; 6&#46;2</p>
+        
+                          </code>
+                        </pre>
+                                    </div>
+
+                                    <p>
+                                        M&eacute;todos de objeto&#58; <br /> Os m&eacute;todos de objeto podem ser
+                                        aessados da seguinte maneira&#58;
+                                    </p>
+
+                                    <div class="content">
+                                        <pre>
+                         <code>
+                          <span>NomeObjeto.nomeMetodo&#40;&#41;&#59;</span>
+        
+                      </code>
+                      </pre>
+                                    </div>
+
+                                    <p>
+                                        &ensp;Para acessar os dois par&acirc;metros e os m&eacute;todos, o operador
+                                        ponto &#40;&#39;&#46;&#39;&#41; &eacute; muito &uacute;til.
+                                    </p>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <img src="../../img/objetosjs.jpg" alt="ilustração JavaScript" class="img-body">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <script>
+        $(function() {
+            $("#btn-objetcts-introduction").click(function() {
+                $("#modal-objetcts-introduction").modal();
+            });
+        });
+
+        $(function() {
+            $("#btn-objetcts-Properties-And-Methods").click(function() {
+                $("#modal-objetcts-Properties-And-Methods").modal();
+            });
+        });
+
+        $(function() {
+            $("#btn-objetcts-creating-object").click(function() {
+                $("#modal-objetcts-creating-object").modal();
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .row {
+                margin-right: 0px;
+                margin-left: -15px;
+            }
+            
+            #header-script {
+                color: rgb(75, 72, 72);
+                width: 27%;
+                height: 100%;
+                font-size: 12px;
+                text-transform: uppercase;
+                padding: 1%;
+                margin-top: 2.3%;
+                cursor: not-allowed;
+            }
+            
+            #flex-container {
+                display: flex;
+                justify-content: space-between;
+                background-color: #fff;
+                margin-bottom: 4%;
+            }
+            
+            #logo {
+                width: 20%;
+            }
+            
+            #logo img {
+                width: 99%;
+                height: 100%;
+            }
+            
+            #text {
+                width: 52%;
+                text-align: center;
+            }
+            
+            #text p {
+                font-family: 'ZCOOL KuaiLe', cursive;
+                font-size: 25px;
+                text-transform: uppercase;
+                padding: 5%;
+                margin-top: 4%;
+            }
+            
+            #header-script #calendar {
+                float: left;
+                width: 22%;
+                margin-right: 1%;
+            }
+            
+            .container {
+                background: #ccc;
+                height: 950px;
+            }
+            
+            #introduction {
+                font-family: 'Libre Baskerville', serif;
+                text-transform: uppercase;
+                text-align: center;
+                margin-bottom: 10%;
+            }
+            
+            #introduction h1 {
+                margin-bottom: 5%;
+            }
+            
+            .wrapper {
+                height: 550px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin: auto 0;
+            }
+            
+            .wrapper a {
+                border: 1px solid black;
+                border-radius: 20px;
+                margin: 5%;
+                width: 90%;
+                height: 90%;
+                display: inline-block;
+                position: relative;
+                text-transform: uppercase;
+                background-color: #120a8f;
+                opacity: 1;
+                transition-duration: 1s;
+            }
+            
+            .wrapper a:hover {
+                opacity: .9;
+            }
+            
+            #introduction-article span,
+            #overview span,
+            #fundamentals span,
+            #loops_conditions span,
+            #functions span,
+            #objects span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: #fff;
+                font-size: 20px;
+                font-family: 'Pacifico', cursive;
+            }
+            
+            footer {
+                background-color: black;
+                height: 120px;
+                text-align: center;
+                margin-bottom: 1%;
+            }
+            
+            footer h3 {
+                font-size: 40px;
+            }
+            
+            footer a {
+                font-size: 30px;
+                text-decoration: underline;
+                color: #fff;
+            }
+            
+            footer .git {
+                border-right: 1px solid #fff;
+                padding-right: 2%;
+            }
+            
+            footer .linkedin {
+                padding-left: 2%;
+            }

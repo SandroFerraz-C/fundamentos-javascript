@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condi&ccedil;&otilde;es e Loops</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../../index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon">Loops e Condições</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+
+                <a class="nav-item nav-link" href="#"> <button class="btn btn-primary" id="btn-loops_conditions-if">if</button>
+                    <div class="modal fade" id="modal-loops_conditions-if">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                                    <h4 class="modal-title">Fundamentos JavaScript</h4>
+                                </div>
+
+                                <div class="modal-body ">
+
+                                    <h2>Condi&ccedil;&otilde;es &#40;if&#41;</h2>
+
+                                    <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
+
+                                    <p>
+                                        &ensp;A instru&ccedil;&otilde;o &#39;if&#39; &eacute; usada em situa&ccedil;&otilde;es em qe um certo <span lang="en-US">bit</span> de c&oacute;diogp s&oacute; &eacute; necess&aacute;rio para ser executado se determinadas
+                                        condi&ccedil;&otilde;es forem atendidas. A sintaxe &eacute; a seguinte&#58;
+                                    </p>
+
+                                    <div class="content">
+                                        <pre>
+                                            <code>
+                                                <p>if &#40;condi&ccedil;&otilde;o&#41;&#123;</p>
+                                                <p>&ensp;c&oacute;digo&#59;</p>
+                                                <p>&#125;</p>
+                                            </code>
+                                        </pre>
+                                    </div>
+
+                                    <p>Considere o seguinte exemplo&#58;</p>
+
+                                    <div class="content">
+                                        <pre>
+                        <code>
+                           <p>var my&#95;num &#61; 5&#59;</p>
+                           <p>if&#40;my&#95;num &#60; 6&#41;&#123;</p>
+                           <p>&ensp;document&#46;write&#40;&#39;Meu n&uacute;mero &eacute; menor que 6 &#39;&#41;&#59;</p>
+                           <p>&#125;</p>
+                           <p>&ensp;&#47;&#47;Output&#58; Meu n&uacute;mero &eacute; menor que 6.</p>
+                          </code>
+                        </pre>
+                                    </div>
+
+                                    <p>
+                                        &ensp;No c&oacute;digo acima, na verifica&ccedil;&otilde;o condicional da instru&ccedil;&otilde;o &#39; if &#39;, tentamos verificar se a vari&aacute;vel
+                                        <code>my&#95;num</code> &eacute; menor que o n&uacute;mero 6. Como
+                                        <code>my&#95;num</code> &eacute; menor que 6, ou seja, a verifica&ccedil;&otilde;o condicional retorna true, o c&oacute;digo dentro do par&ecirc;ntese da instru&ccedil;&otilde;o
+                                        <code>if</code> &eacute; executado.
+                                    </p>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="nav-item nav-link" href="#"> <button class="btn btn-primary" id="btn-loops_conditions-if-else"><span lang="en-US">if</span> &#133; <span
+                            lang="en-US">else</span></button>
+                    <div class="modal fade" id="modal-loops_conditions-if-else">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                                    <h4 class="modal-title">Fundamentos JavaScript</h4>
+                                </div>
+
+                                <div class="modal-body ">
+
+                                    <h2>Condi&ccedil;&otilde;es &#40; <span lang="en-US">if</span> &#133;
+                                        <code>else</code> &#41;</h2>
+
+                                    <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
+
+                                    <p>
+                                        &ensp;A instru&ccedil;&otilde;o &#145;<code>else</code>&#145; &eacute; usada para expecificar um bloco de c&oacute;digo que ser&aacute; executado se a condi&ccedil;&otilde;o da istru&ccedil;&otilde;o &#145
+                                        <code>if</code> &#145; for <code>false</code>. Exemplo&#58;
+                                    </p>
+
+                                    <div class="content">
+                                        <pre>
+                    <code>
+                      <p>if &#40;condi&ccedil;&otilde;o&#41;&#123;</p>
+                      <p> c&oacute;digo se a condi&ccedil;&otilde;o for verdadeira&#59;</p>
+                      <p>&#125;else &#123;</p>
+                      <p> c&oacute;digo se a condi&ccedil;&otilde;o for falsa&#59;</p>
+                      <p>&#125;</p>
+                    </code>
+                  </pre>
+                                    </div>
+
+                                    <p>&ensp;Considere o seguinte exemplo&#58;</p>
+
+                                    <div class="content">
+
+                                        <pre>
+                    <code>
+    
+                      <p>var my&#95;num &#61; 5;</p>
+                      <p>if&#40;my&#95;num &#62;  6&#41;&#123;</p>
+                        <p>document&#46;write&#40;&#147;Meu n&uacute;mero &eacute; maior que 6 &#147;&#41;&#59;</p>
+                               <p>&#125;else&#123;</p>
+                                <p>document&#46;write&#40;&#147;Meu n&uacute;mero &eacute; menor que 6 &#147;&#41;&#59;</p>
+                                <p>&#125;</p>
+    
+                               <p>&#47;&#47; Output&#58; Meu n&uacute;mero &eacute; menor que 6.</p>
+    
+                          </code>
+                          </pre>
+                                    </div>
+
+                                    <p>
+                                        &ensp;No c&oacute;digo acima, a vari&aacute;vel &eacute; verificada primeiro se for maior que o n&uacute;mero 6. Como essa verifica&ccedil;&otilde;o condicional retorna false, o c&oacute;digo dentro do bloco &#39;<code>else</code>&#39;
+                                        &eacute; executado.
+                                    </p>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="nav-item nav-link disabled" href="#"><button class="btn btn-primary"
+                        id="btn-loops_conditions-if-else-if"><span lang="en-US">if</span>&#133;<span lang="en-US">else
+                            if</span></button>
+                    <div class="modal fade" id="modal-loops_conditions-if-else-if">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                                    <h4 class="modal-title">Fundamentos JavaScript</h4>
+                                </div>
+
+                                <div class="modal-body ">
+
+                                    <h2>Condi&ccedil;&otilde;es &#40; <code>if</code>&#133;<code>else if</code>&#41;
+                                    </h2>
+
+                                    <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
+
+                                    <p>
+                                        &ensp;A escada &#39;<code>if</code> &#133; <code>else if</code>&#39; &eacute;
+                                        usada para verificar uma condi&ccedil;&otilde;o diferente se a primeira
+                                        condi&ccedil;&otilde;o falhar. Exemplo&#58;
+                                    </p>
+
+                                    <div class="content">
+
+                                        <pre>
+                             <code>
+    
+                              <p>if &#40;condi&ccedil;&otilde;o 1&#41;&#123;</p>
+    
+                               <p>&ensp; bloco de c&oacute;digo 1&#59;</p>
+                               <p>&#125;else if &#40;condi&ccedil;&otilde;o 2&#41;&#123;</p>
+                               <p>&ensp; bloco de c&oacute;digo 2&#59;</p>
+                                <p>&#125;else&#123;</p>
+                               <p>&ensp; bloco de c&oacute;digo 3&#59;</p>
+                                <p>&#125;</p>
+    
+                          </code>
+                    </pre>
+                                    </div>
+
+                                    <p>Considere o seguinte exemplo&#58;</p>
+
+                                    <div class="content">
+                                        <pre>
+                             <code>
+                              
+                              <p>var my&#95;media &#61; 75&#59;</p>
+    
+                                <p>if &#40;my&#95;media  &#62;  90&#41;&#123;</p>
+                                  <p>&ensp; document&#46;write&#40;&#39;Voc&ecirc; foi Exelente na prova&#39;&#41;&#59;</p>
+                               <p>&#125;else if &#40;my&#95;media  &#62;  60&#41;&#123;</p>
+                                <p>&ensp; document&#46;write&#40;&#39;Voc&ecirc; foi Bom na prova&#39;&#41;&#59;</p>
+                                <p>&#125;else&#123;</p>
+                                <p>&ensp; document&#46;write&#40;&#39;Voc&ecirc; foi Ruim na prova&#39;&#41;&#59;</p>
+    
+                               <p>&ensp;&#47;&#47; Output&#58; Voc&ecirc; foi Bom na prova.</p>
+    
+                          </code>
+                          </pre>
+                                    </div>
+
+                                    <p>
+                                        &ensp;No c&oacute;digo acima, a primeira condi&ccedil;&otilde;o dentro da
+                                        instru&ccedil;&otilde;o &#39;if&#39; verifica de a vari&aacute;vel &eacute;
+                                        maior que 90. Como isso &eacute; falso, a segunda verifica&ccedil;&otilde;o
+                                        condicional &eacute; feita
+                                        na se&ccedil;&otilde;o &#39;<code>if</code> &#133;<code>else</code>c&#39; do
+                                        c&oacute;digo. Como essa condi&ccedil;&otilde;o &eacute; verdadeira, o
+                                        c&oacute;digo dentro dess bloco &eacute; executado
+                                        e a escada inteira &#39;<code>if</code>&#133; <code>else if</code>&#39; &eacute;
+                                        encerrada.
+                                    </p>
+
+                                    <p>
+                                        &ensp;Se a segunda verifica&ccedil;&otilde;o condicional tamb&eacute; fosse
+                                        falsa, o c&oacute;digo padr&atilde;o dentro do bloco de instru&ccedil;&otilde;o
+                                        else seria executado.
+                                    </p>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="nav-item nav-link" href="#"> <button class="btn btn-primary" id="btn-loops_conditions-switch-case"><span lang="en-US">switch &#150;
+                            case</span></button>
+                    <div class="modal fade" id="modal-loops_conditions-switch-case">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                                    <h4 class="modal-title">Fundamentos JavaScript</h4>
+                                </div>
+
+                                <div class="modal-body ">
+
+                                    <h2><span lang="en-US">Loop</span> &#40; <code>switch</code> &#150;
+                                        <code>case</code> &#41;</h2>
+
+                                    <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
+
+                                    <p>
+                                        &ensp;Se houver v&aacute;rias verifica&ccedil;&otilde;es condicionais a serem realizadas, as instru&ccedil;&otilde;es &#39;<code>if</code> &#133;
+                                        <code>else if</code>&#39; podem ficar muito longas e tediosas. Uma abordagem melhor &eacute; usar a instru&ccedil;&otilde;o &#39;
+                                        <code>switch</code><code>case</code> &#39;. Exemplo&#58;
+                                    </p>
+
+                                    <div class="content">
+                                        <pre>
+                       <code>
+
+                        <p>switch &#40; par&acirc;metro de condi&ccedil;&otilde;o &#41;&#123;</p>
+
+                         <p>&ensp;case n1&#58;</p>
+                          <p>&ensp;&ensp;bloco de c&oacute;digo 1&#59;</p>
+                          <p>&ensp;&ensp;break&#59;</p>
+
+                          <p>&ensp;case n2&#58;</p>
+                          <p>&ensp;&ensp;bloco de c&oacute;digo 2&#59;</p>
+                          <p>&ensp;&ensp;break&#59;</p>
+
+                          <p>&ensp;case n3&#58;</p>
+                          <p>&ensp;&ensp;bloco de c&oacute;digo 3&#59;</p>
+                          <p>&ensp;&ensp;break&#59;</p>
+
+                          <p>&ensp;case n4&#58;</p>
+                          <p>&ensp;&ensp;bloco de c&oacute;digo 4&#59;</p>
+                          <p>&ensp;&ensp;break&#59;</p>
+
+                          <p>&ensp;defaut&#58;</p>
+                           <p>&ensp;&ensp;bloco de c&oacute;digo padr&atilde;o&#59;</p>
+                          <p>&#125;</p>
+
+                    </code>
+              </pre>
+                                    </div>
+
+                                    <p>Considere o seguinte exemplo&#58;</p>
+
+                                    <div class="content">
+                                        <pre>
+                       <code>
+                        
+                        <p>var select&#95;color &#61; &#39;Blue&#39;&#59;</p>
+
+                            <p>switch &#40;select&#95;color&#41;&#123;</p>
+                            <p>&ensp;case &#39;Red&#39;&#58;</p>
+                            <p>&ensp;&ensp;document&#46;write&#40;&#39;Voc&ecirc; escoleu Vermelho&#39;&#41;&#59;</p>
+                            <p>&ensp;&ensp;break&#59;</p>
+
+                              <p>&ensp;case &#39;Blue&#39;&#58;</p>
+                              <p>&ensp;&ensp;document&#46;write&#40;&#39;Voc&ecirc; escolheu Azul&#39;&#41;&#59;</p>
+                              <p>&ensp;&ensp;break&#59;</p>
+
+                              <p>&ensp;case &#39;Grenn&#39;&#58;</p>
+                              <p>&ensp;&ensp;document&#46;write&#40;&#39;Voc&ecirc; escolheu Verde&#39;&#41;&#59;</p>
+                              <p>&ensp;&ensp;break&#59;</p>
+
+                              <p>&ensp;case &#39;Black&#39;&#58;</p>
+                              <p>&ensp;&ensp;document&#46;write&#40;&#39;Voc&ecirc; escolheu Preto&#39;&#41;&#59;</p>
+                              <p>&ensp;&ensp;break&#59;</p>
+
+                              <p>&ensp;default</p>
+                              <p>&ensp;&ensp;document&#46;write&#40;&#39;Voc&ecirc; precisa escolher uma cor&#39;&#41;&#59;</p>
+                              <p>&ensp;&ensp;break&#59;</p>
+                              <p>&#125;</p>
+
+                              <p>&#47;&#47; Output&#58; Voc&ecirc; escolheu Azul.</p>
+
+                    </code>
+                    </pre>
+                                    </div>
+
+                                    <p>
+                                        &ensp;Aqui a vari&aacute;vel select&#95;color &eacute; enviada para a instru&ccedil;&otilde;o &#39; <code>switch case</code>&#39; como o par&acirc;metro condicional a ser verificado. O valor dessa vari&aacute;vel
+                                        &eacute; verificado sequencialmente para encontrar correspodentes. Aqui, um correspondente &eacute; encontrado no caso &#39;<span lang="en-US">Blue</span>&#39;. Portanto, o c&oacute;digo dentro desse bloco &eacute;
+                                        executado. Ainstru&ccedil;&otilde;o &#39;
+                                        <code>break</code>&#39; &eacute; usada para sair de um caso de
+                                        <code>switch</code> depois que o correspondente &eacute; encontrado e o c&oacute;digo acima &eacute; executado. Na sua aus&ecirc;ncia, o programa ir&aacute; para os casos subsequentes e continuar&aacute; procurando
+                                        correspondentes.
+                                    </p>
+
+                                    <p>
+                                        &ensp;Se nenhum correspondente for encontrado, o c&oacute;digo dentro do caso &#39;
+                                        <code>default</code>&#39; ser&aacute; executado.
+                                    </p>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="nav-item nav-link" href="#"><button class="btn btn-primary"
+                        id="btn-loops_conditions-for">for</button>
+                    <div class="modal fade" id="modal-loops_conditions-for">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                                    <h4 class="modal-title">Fundamentos JavaScript</h4>
+                                </div>
+
+                                <div class="modal-body ">
+
+                                    <h2><span lang="en-US">loop</span>Loop &#40; <span lang="en-US">for</span> &#41;
+                                    </h2>
+
+                                    <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
+
+                                    <p>
+                                        &ensp;Os <span lang="en-US">loops</span> s&atilde;o usados quando &eacute;
+                                        necss&eacute;rio verificar uma condi&ccedil;&otilde;o em v&aacute;rias
+                                        itera&ccedil;&otilde;es, em que o par&acirc;metro que passa pela
+                                        verifica&ccedil;&otilde;o
+                                        da condi&ccedil;&otilde;o pode alterar seu valor. Vamos verificar o <span
+                                            lang="en-US">loop</span> &#39;<code>for</code>&#39;. A sintaxe &eacute; a
+                                        seguinte&#58;
+                                    </p>
+
+                                    <div class="content">
+                                        <pre>
+                         <code>
+    
+                          <p>for &#40;declara&ccedil;&otilde;o 1&#59; declara&ccedil;&otilde;o 2&#59; declara&ccedil;&otilde;o 3&#41;&#123;</p>
+                         <p>&ensp;bloco de c&oacute;digo a ser executado&#59;</p>
+    
+                            <p>&#125;</p>
+    
+                      </code>
+                </pre>
+                                    </div>
+
+                                    <span>declara&ccedil;&otilde;o 1&#58;</span>
+
+                                    <p>
+                                        &ensp;Esta instru&ccedil;&otilde;o &eacute; executada antes do início do <span
+                                            lang="en-US">loop</span> &#40;apenas uma vez&#41;.
+                                    </p>
+
+                                    <span>declara&ccedil;&otilde;o 2</span>
+
+                                    <p>
+                                        &ensp;Esta declara&ccedil;&otilde;o &eacute; a verifica&ccedil;&otilde;o
+                                        condicional executada antes de cada itera&ccedil;&otilde;o.
+                                    </p>
+
+
+                                    <span>declara&ccedil;&otilde;o 3</span>
+
+                                    <p>
+                                        &ensp;Esta declara&ccedil;&otilde;o &eacute; executada no final de cada
+                                        itera&ccedil;&otilde;o do <span lang="en-US">loop</span>.
+                                    </p>
+
+                                    <p>Considere o seguinte exemplo&#58;</p>
+
+                                    <div class="content">
+                                        <pre>
+                         <code>
+                          
+                          <p>var i&#59; for&#40; i &#61; 0&#59; i &#139; 5&#59; i&#43;&#41;&#123;</p>
+                          <p>&ensp;document&#46;write&#40;i&#41;&#59;</p>
+                          <p>&ensp;document&#46;write&#40;&#39;</p>
+                            <p>&#39;&#41;</p>
+                            <p>&ensp;&#125;</p>
+    
+                            <p>&ensp;&#47;&#47;Resultado&#58;</p>
+    
+                             <p>&ensp;1</p>
+                             <p>&ensp;2</p>
+                             <p>&ensp;3</p>
+                              <p>&ensp;4</p>
+    
+                      </code>
+                      </pre>
+                                    </div>
+
+                                    <span>declara&ccedil;&otilde;o 1&#58;</span> &ensp;
+
+                                    <p>&ensp;A vari&aacute;vel i &eacute; inicializada com o valor 0.</p>
+
+                                    <span>declara&ccedil;&otilde;o 2&#58;</span>
+
+                                    <p>
+                                        &ensp;Essa &eacute; a condi&ccedil;&otilde;o de verifica&ccedil;&otilde;o que
+                                        verificar&aacute; se o valor de 5 &eacute; menor que 5 em cada
+                                        intera&ccedil;&otilde;o.
+                                    </p>
+
+                                    <span>declara&ccedil;&otilde;o 4&#58;</span> &ensp;
+
+                                    <p>
+                                        &ensp;Esta declara&ccedil;&otilde;o &eacute; usada para alterar a
+                                        vari&aacute;vel i. &eacute; uasado para incrementar o valor de i em cada
+                                        intera&ccedil;&otilde;o.
+                                    </p>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="nav-item nav-link disabled" href="#"><button class="btn btn-primary"
+                        id="btn-loops_conditions-while"><span lang="en-US">while</span></button>
+                    <div class="modal fade" id="modal-loops_conditions-while">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                                    <h4 class="modal-title">Fundamentos JavaScript</h4>
+                                </div>
+
+                                <div class="modal-body ">
+
+                                    <h2><span lang="en-US">loop</span> &#40; <code>while</code> &#41;</h2>
+
+                                    <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
+
+                                    <p>
+                                        &ensp;O <span lang="en-US">loop</span> &#39;<code>while</code>&#39; verifica uma
+                                        condi&ccedil;&otilde;o no inicio do bloco e s&oacute; executa o c&oacute;digo e
+                                        a condi&ccedil;&otilde;o for verdadeira. Sintaze&#58;
+                                    </p>
+
+                                    <div class="content">
+                                        <pre>
+                           <code>
+        
+                            <p>whie&#40;condi&ccedil;&otilde;o&#41;&#123;</p>
+                              <p>&ensp;bloco de c&oacute;digo a ser executado&#59;</p>
+        
+                            <p> &ensp;&#125;</p>
+        
+                        </code>
+                  </pre>
+                                    </div>
+
+                                    <p>Considere o seguinte exemplo&#58;</p>
+
+                                    <div class="content">
+                                        <pre>
+                           <code>
+                            
+                              <p>var x &#61; 1&#59;</p>
+                              <p>while &#40;x &#45; 5&#41;&#123;</p>
+                              <p>&ensp;document&#46;write&#40;x&#41;&#59;</p>
+                              <p>&ensp;i&#43;</p>
+                              <p>&#125;</p>
+        
+                              <p>&#47;&#47;Resultado&#58;</p>
+        
+                              <p>1</p>
+                              <p>2</p>
+                              <p>3</p>
+                              <p>4</p>
+        
+                        </code>
+                        </pre>
+                                    </div>
+
+                                    <p>
+                                        &ensp;Aqui, a condi&ccedil;&otilde;o do <span lang="en-US">loop</span>
+                                        <code>while</code> verifica e a vari&aacute;vel x &eacute; menor que 5. Se essa
+                                        condi&ccedil;&otilde;o for verdadeira, o bloco do c&oacute;digo dentro do
+                                        <span lang="en-US">loop</span> <code>while</code> &eacute; ececutado; Aqui
+                                        tentamos incrementar a vari&aacute;vel x em um a cada intera&ccedil;&otilde;o.
+                                        Quando o valor de X &eacute; maior que 5, ou seja, 6, a
+                                        verifical&ccedil;&otilde;o
+                                        condicional while retorna false e o <span lang="en-US">loop</span> &eacute;
+                                        encerrado
+                                    </p>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="nav-item nav-link disabled" href="#"> <button class="btn btn-primary" id="btn-loops_conditions-do-while"><span lang="en-US">do</span> &#150; <span
+                            lang="en-US">while</span> </button>
+                    <div class="modal fade" id="modal-loops_conditions-do-while">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                                    <h4 class="modal-title">Fundamentos JavaScript</h4>
+                                </div>
+
+                                <div class="modal-body ">
+
+                                    <h2><span lang="en-US">loop</span> &#40; <span lang="en-US">do</span> &#150; <span lang="en-US">while</span> &#41;</h2>
+
+                                    <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
+
+                                    <p>
+                                        &ensp;A condi&ccedil;&otilde;o &#39;<span lang="en-US">do</span>..&#46;<span lang="en-US">while</span>&#39; &eacute; semelhante a condi&ccedil;&otilde;o &#39;
+                                        <span lang="en-US">while</span>&#39;, com a diferen&ccedil;&otilde; de que no &#39;do &#133; <span lang="en-US">while</span>&#39;, a verifica&ccedil;&otilde;o condicional &eacute; feita no final do bloco do c&oacute;digo.
+                                        Como tal, a primeira intera&ccedil;&otilde;o do bloco de c&oacute;digo &eacute; executada independentemente de a verifica&ccedil;&otilde;o condicional retornar verdadeira ou falsa. Aqui o bloco de c&oacute;digo
+                                        &eacute; sempre executado pelo menos uma vez . Exemplo&#58;
+                                    </p>
+
+                                    <div class="content">
+                                        <pre>
+                                            <code>   
+                                              <p>do&#123;</p>
+                                                <p>&ensp;bloco de c&oacute;digo&#59;</p>
+                                                <p>&#125;while &#40;condi&ccedil;&otilde;o&#41;&#59;</p>
+                                            </code>
+                                        </pre>
+                                    </div>
+
+                                    <p>Considere o seguinte exemplo&#58;</p>
+
+                                    <div class="content">
+                                        <pre>
+                     <code>
+                      
+                    
+                        <p>const cores &#61; &#91;</p>
+                        <p>&ensp;&#39;Verde&#39;,</p>
+                         <p>&ensp;&#39;Amarelo&#39;,</p> 
+                         <p>&ensp;&#39;Azul&#39;,</p> 
+                          <p>&ensp;&#39;Branco&#39;</p>
+                          <p>&#93;&#59;</p>
+                          <p>let index &#61; 0&#59;</p>
+                        <p>while &#40;index &#60; cores&#46;length&#41; &#123;</p>
+                        <p>console&#46;log&#40;index, cores&#91;index&#93;&#41;&#59;</p>
+                        <p>index&#43;&#43;</p>
+                        <p>&#125;</p>
+    
+                        <p>&#47;&#47;Resultado&#58;</p>
+    
+                        <p>&#47;&#47; 0 &#39;Verde&#39;</p>
+                        <p>&#47;&#47; 1 &#39;Amarelo&#39;</p>
+                        <p>&#47;&#47; &#133;</p>
+    
+                  </code>
+                  </pre>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="nav-item nav-link disabled" href="#"> <button class="btn btn-primary" id="btn-loops_conditions-break">break</button>
+                    <div class="modal fade" id="modal-loops_conditions-break">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                                    <h4 class="modal-title">Fundamentos JavaScript</h4>
+                                </div>
+
+                                <div class="modal-body ">
+
+                                    <h2><span lang="en-US">break</span></h2>
+
+                                    <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
+
+                                    <p>
+                                        &ensp;A instru&ccedil;&otilde;o &#39;<code>break</code>&#39; &eacute; usada para sair de um
+                                        <span lang="en-US">loop</span> e come&ccedil;&otilde;r a executar o c&oacute;digo ap&oacute;is o <span lang="en-US">loop</span>. Exemplo&#58;
+                                    </p>
+
+                                    <div class="content">
+                                        <pre>
+                           <code>
+            
+                            <p>var i&#59;</p>
+                            <p>for&#40; i &#61; 0&#59; i &#60; 5&#59; i &#43;&#41;&#123;</p>
+                            <p>&ensp;document&#46;write&#40;i&#41;&#59;</p>
+                            <p>&ensp;document&#46;write&#40;&#34;</p>
+                            <p> &#34;&#41;&#59;</p>
+                            <p>&ensp;if &#40; i &#61;&#61; 3&#41;&#123;</p>
+                            <p>&ensp;&ensp;break&#59;</p>
+                            <p>&ensp;&#125;</p>
+                            <p>&#125;</p>
+            
+                            <p>&ensp;document&#46;write&#40;&#39;Loop encerrado&#39;&#41;&#59;</p>
+            
+                            <p>&#47;&#47; Resultado&#59;</p>
+                            <p>0</p>
+                            <p>1</p>
+                            <p>2</p>
+                            <p>3</p>
+                            <p>Loop encerrado</p>
+                        </code>
+                    </pre>
+                                    </div>
+
+                                    <p>
+                                        &ensp;Aqui, vemos que o <span lang="en-US">loop</span> &eacute; encerrado ap&oacute;is a instru&ccedil;&otilde;o
+                                        <code>break</code>.Quando a condi&ccedil;&otilde;o <code>if</code> retorna
+                                        <code>true</code>, ou seja, a vari&aacute;vel i &eacute; igual a 3, a instru&ccedil;&otilde;o <code>break</code> &eacute; executada, que sai do
+                                        <span lang="en-US">loop</span> <code>for</code> e executa o c&oacute;digo ap&oacute;is ele.
+                                    </p>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="nav-item nav-link disabled" href="#"><button class="btn btn-primary"
+                        id="btn-loops_conditions-continue">continue</button>
+                    <div class="modal fade" id="modal-loops_conditions-continue">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                                    <h4 class="modal-title">Fundamentos JavaScript</h4>
+                                </div>
+
+                                <div class="modal-body ">
+
+                                    <h2><code>continue</code></h2>
+
+                                    <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
+
+                                    <p>
+                                        &ensp;A declara&ccedil;&otilde;o &#39;<code>continue</code>&#39; apenas sai da
+                                        itera&ccedil;&otilde;o atual e o <span lang="en-US">loop</span> continua.
+                                        Exemplo&#58;
+                                    </p>
+
+                                    <div class="content">
+
+                                        <pre>
+
+                                                <code>
+                
+                                  <p>var i&#59;</p>
+                                  <p>for&#40; i &#61; 0&#59; i &#60; 5&#59; i &#43;&#41;&#123;</p>
+                                  <p>&ensp;if &#40; i &#61;&#61; 3&#41;&#123;</p>
+                                  <p>&ensp;&ensp;continue</p>
+                                  <p>&ensp;&#125;</p>
+                                  <p>&ensp;document&#46;write&#40;i&#41;&#59;</p>
+                                  <p>&ensp;document&#46;write&#40;&#39;</p>
+                                  <p> &#39;&#41;&#59;</p>
+                                  <p>&ensp;&#125;</p>
+                              
+                                  <p>&#47; Resultado&#59;</p>
+                                <p>0</p>
+                                <p>1</p>
+                                <p>2</p>
+                                <p>4</p>
+                
+                              </code>
+                    </pre>
+                                    </div>
+
+                                    <p>
+                                        &ensp;Aqui, quando o c&oacute;digo de condi&ccedil;&otilde;o &#39;
+                                        <code>if</code> &#39; &eacute; acionado, ou seja, a instru&ccedil;&otilde;o
+                                        &#39;<code>continue</code>&#39; &eacute; executada, a itera&ccedil;&otilde;o
+                                        atual
+                                        do <span lang="en-US">loop</span> &eacute; encerrada e a pr&oacute;xima
+                                        itera&ccedil;&otilde;o do <span lang="en-US">loop</span> <code>for</code>
+                                        &eacute; executada. Como tal, o c&oacute;digo ap&oacute;is a
+                                        instru&ccedil;&otilde;o
+                                        &#39;
+                                        <code>continue</code>&#39; n&atilde;o &eacute; executado, ou seja, o valor de i
+                                        quando &eacute; igual a 3 n&atilde;o &eacute; impresso.
+                                    </p>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+    <img src="../../img/loopECondicoes.png" alt="Imagem ilustração javascript" class="img-body">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function() {
+            $("#btn-loops_conditions-if").click(function() {
+                $("#modal-loops_conditions-if").modal();
+            });
+        });
+
+        $(function() {
+            $("#btn-loops_conditions-if-else").click(function() {
+                $("#modal-loops_conditions-if-else").modal();
+            });
+        });
+
+        $(function() {
+            $("#btn-loops_conditions-if-else-if").click(function() {
+                $("#modal-loops_conditions-if-else-if").modal();
+            });
+        });
+
+        $(function() {
+            $("#btn-loops_conditions-switch-case").click(function() {
+                $("#modal-loops_conditions-switch-case").modal();
+            });
+        });
+
+        $(function() {
+            $("#btn-loops_conditions-for").click(function() {
+                $("#modal-loops_conditions-for").modal();
+            });
+        });
+
+        $(function() {
+            $("#btn-loops_conditions-while").click(function() {
+                $("#modal-loops_conditions-while").modal();
+            });
+        });
+
+        $(function() {
+            $("#btn-loops_conditions-do-while").click(function() {
+                $("#modal-loops_conditions-do-while").modal();
+            });
+        });
+
+        $(function() {
+            $("#btn-loops_conditions-break").click(function() {
+                $("#modal-loops_conditions-break").modal();
+            });
+        });
+
+        $(function() {
+            $("#btn-loops_conditions-continue").click(function() {
+                $("#modal-loops_conditions-continue").modal();
+            });
+        });
+    </script>
+</body>
+
+</html>

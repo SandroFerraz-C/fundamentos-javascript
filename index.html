@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Pacifico&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <script language=javascript type="text/javascript">
+        dayName = new Array("Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sábado")
+        monName = new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Agosto", "Outubro", "Novembro", "Dezembro")
+        now = new Date
+    </script>
+
+    <header>
+
+        <div id="flex-container">
+
+            <div id="logo">
+                <img src="img/logo/logo_js.jpg" alt="imagem de inlustração Javascript" />
+            </div>
+
+            <div id="text">
+                <p>Tutorial Javascript by Um Dev. Qualquer</p>
+            </div>
+
+
+            <div id="header-script" class="row align-items-center">
+                <img src="img/calendar.png" alt="icone calendario" id="calendar" class="col-md-12">
+                <script language=javascript type="text/javascript">
+                    document.write("<p>  " + dayName[now.getDay()] + ", " + now.getDate() + " de " + monName[now.getMonth()] + " de " + now.getFullYear() + ". </p>")
+                </script>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="container">
+
+
+
+        <section id="introduction">
+            <h1>um tutorial simples, porém eficiente de javascript</h1>
+            <h2> Do básico aos tópicos avançados com explicações simples, mas detalhadas.</h2>
+        </section>
+
+
+        <main>
+            <div class="wrapper">
+                <section id="introduction-article">
+                    <a href="./components/Introduction/index.html"><span>introdução</span></a>
+                </section>
+
+                <section id="overview"><a href="./components/Overview/index.html"><span>visão geral</span></a></section>
+
+                <section id="fundamentals"> <a href="./components/Fundamentals/index.html"><span>fundamentos</span></a></section>
+
+                <section id="loops_conditions"><a href="./components/Loops_Conditions/index.html"><span>condições e loops</span></a></section>
+
+                <section id="functions"><a href="./components/Functions/index.html"><span>Funções</span></a></section>
+
+                <section id="objects"><a href="./components/Objects/index.html"><span>Objetos</span></a></section>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <h3>Outros Trabalhos:</h3>
+        <a href="https://github.com/SandroFerraz-C" class="git" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/mynetwork/" class="linkedin" target="_blank">LinkedIn</a>
+
+    </footer>
+    </div>
+</body>
+
+</html>

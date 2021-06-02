@@ -1,0 +1,132 @@
+nav {
+    background-color: #ccc;
+}
+
+h2 {
+    margin-bottom: 10%;
+}
+
+#navbarNavAltMarkup {
+    margin-left: 7%;
+}
+
+.navbar-toggler {
+    margin-top: 1%;
+}
+
+.img-body {
+    width: 100%;
+    height: 550px;
+}
+
+.img-logo {
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+.btn {
+    margin-bottom: 1%;
+}
+
+@media only screen and (max-width: 320px) {
+    #navbarNavAltMarkup {
+        margin-left: 17%;
+    }
+    .navbar-toggler {
+        width: 90%;
+        margin-left: 4%;
+        margin-top: 1%;
+        border-radius: 5px;
+    }
+    .navbar {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    #navbarNavAltMarkup {
+        margin-left: 20%;
+    }
+    .navbar-toggler {
+        width: 90%;
+        margin-left: 4%;
+        margin-top: 1%;
+        border-radius: 5px;
+    }
+    .navbar {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    #navbarNavAltMarkup {
+        margin-left: 25%;
+    }
+    .navbar-toggler {
+        width: 90%;
+        margin-left: 4%;
+        margin-top: 1%;
+        border-radius: 5px;
+    }
+    .navbar {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #navbarNavAltMarkup {
+        margin-top: 2%;
+        margin-left: 10%;
+    }
+    .navbar-toggler {
+        width: 70%;
+        margin-left: 4%;
+        margin-top: 3%;
+        border-radius: 5px;
+    }
+    .navbar {
+        margin-bottom: 0;
+    }
+    .img-body {
+        height: 1000px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #navbarNavAltMarkup {
+        margin-top: 2%;
+        margin-left: .3%;
+    }
+    .navbar-toggler {
+        width: 70%;
+        margin-left: 4%;
+        margin-top: 3%;
+        border-radius: 5px;
+    }
+    .navbar {
+        margin-bottom: 0;
+    }
+    .img-body {
+        height: 1000px;
+    }
+}
+
+@media only screen and (min-width: 1240px) {
+    #navbarNavAltMarkup {
+        margin-top: 2%;
+        margin-left: 5%;
+    }
+    .navbar-toggler {
+        width: 70%;
+        margin-left: 4%;
+        margin-top: 3%;
+        border-radius: 5px;
+    }
+    .navbar {
+        margin-bottom: 0;
+    }
+    .img-body {
+        height: 1000px;
+    }
+}

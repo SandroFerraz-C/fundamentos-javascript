@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intodu&ccedil;&atilde;o ao JavaScript</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../../index.html">Home</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon">Introdução Ao JavaScript</span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+
+                <a class="nav-item nav-link" href="#">
+
+                    <button class="btn btn-primary" id="btn-introduction-history">Hist&oacute;ria</button>
+                    <div class="modal fade" id="modal-introduction-history">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                                    <h4 class="modal-title">Fundamentos JavaScript</h4>
+                                </div>
+                                <div class="modal-body ">
+                                    <h2>Hist&oacute;ria</h2>
+                                    <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
+
+                                    <p>
+                                        &ensp;Em <span time datetime="1993"> 1993</span>, o desenvolvedor Marc Andreessen ajudou o Centro Nacional de Aplicativos de Supercomputa&ccedil;&atilde;o da Universidade de Illinois a lan&ccedil;ar o
+                                        <span lang="en-US">Mosaic</span>: Um navegador gr&aacute;fico e amig&aacute;vel ao usu&aacute;rio. A internet estava evoluindo de uma &aacute;rea de entusiastas em texto para o universo multim&iacute; dia para os
+                                        principais usu&aacute;rios de computadores.
+                                    </p>
+
+                                    <p>
+                                        &ensp;Posteriormente, Andreessen fundou a <span lang="en-US">Mosaic Communications
+                                            Corporation</span> e publicou um navegador comercial chamado <span lang="en-US">Mosaic
+                                            Navegator</span> em <span time datetime="1994">1994</span> &#40;O nome foi alterado pela Netscape ap&oacute;is uma a&ccedil;&atilde;o judicial.&#41; O <span lang="en-US">Netscape
+                                            Navigator</span> foi um sucesso e o <span lang="en-US">Netscape</span> estabeleceu novos recordes.
+                                    </p>
+
+                                    <p>
+                                        &ensp;A resposta da Microsoft, &#40; <span lang="en-US">Internet Explore</span> &#41;, apareceu amea&ccedil;adora no horizonte. Andreessen sabia que o <span lang="en-US">Navigator</span> teria que empurrar novos
+                                        recursos para manter o dominio; os navegadores da <abbr title="World Wide Web">Web</abbr> precisavam ir al&eacute;m da exibi&ccedil;&atilde;o de documentos est&aacute;ticos e executar um <span lang="en-US">software</span>                                        verdadeiramente interativo.
+                                    </p>
+
+                                    <p>
+                                        &ensp;Em <span time datetime="1995"> 1995</span>, a <span lang="en-US">Netsape</span> intermediou um acordo com outro concorrente da Microsoft, a <span lang="en-US">Sun
+                                            Microsystems</span>, que estava lan&ccedil;ando uma importante linguagem de programa&ccedil;&atilde;o, o <strong>java</strong>. O Java empresta a sintaxe do C &frasl; C&#43;&#43;, mas o <span lang="en-US">bytecode</span>                                        Java complilado &eacute; portatil &minus; pode ser executado como esta em diferentes sistemas operacionais.
+                                    </p>
+
+                                    <p>
+                                        &ensp;A natureza restrita de Java significava que ainda havia a necessidade de um &#39;script &#39;, de uma linguagem para aprimorar a p&aacute;gina da <abbr title="World Wide Web">Web</abbr>; &frasl; Anima&ccedil;&atilde;o
+                                        de menus suspensos, valida&ccedil;&atilde;o de entradas de formul&aacute;rios etc. Como a Sun posicionava o Java como a op&ccedil;&atilde;o proficional para programas embarcados complexos, essa linguagem complementar
+                                        foi vista como uma pequena solu&ccedil;&atilde;o acess&iacute; vel para designers e autorea de p&aacute;ginas. Fundamentalente, ele poderia ser escrito diretamente dentro dos documentos
+                                        <abbr title="HyperText Markup Language">HTLM</abbr> e seria interpretado pelo pr&otilde;prio navegador <span lang="en-US">Navigator</span>.
+                                    </p>
+
+                                    <p>
+                                        &ensp;Foi nesse ponto no inicio em <span time datetime="1995"> 1995</span> que Brendan Eich foi contratato pela Netsacape para projetar essa linguagem em um prazo extremo. Os requisitos fornecidos a Eich e suas
+                                        decis&otilde;es em cumpri-los acabariam tendo um efeito desproporcional monumental na natureza <abbr title="World Wide Web">Web</abbr>.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="nav-item nav-link" href="#">
+
+                    <button class="btn btn-primary" id="btn-introduction-introduction">Introdu&ccedil;&atilde;o</button>
+
+                    <div class="modal fade" id="modal-introduction-introduction">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                                    <h4 class="modal-title">Fundamentos JavaScript</h4>
+                                </div>
+                                <div class="modal-body ">
+
+                                    <h2>Introdu&ccedil;&atilde;o</h2>
+
+                                    <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
+
+                                    <p>
+                                        &ensp;JavaScript, geralmente abreviado como <abbr title="JavaScript">JS</abbr>, &eacute; uma linguagem de programa&ccedil;&atilde;o que esta em conformidade com a especifica&ccedil;&atilde;o ECMAScript.
+                                        <br /> Javascript &eacute; de alto n&iacute; vel, geralmente compilado na hora certa e com v&aacute;rios paradigmas. Possui sintaxe entre colchetes, digita&ccedil;&atilde;o din&acirc;mica, orientada a objetos com
+                                        base em prot&oacute;tipo e fun&ccedil;&otilde;es de primeira classe.
+                                    </p>
+
+                                    <p>
+                                        &ensp;Juntamente com <abbr title="HyperText Markup Language">HTLM</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, o JavaScript &eacute; uma das principais tecnologias da <abbr title="World Wide Web">Web</abbr>.
+                                        O JavaScript ativa p&aacute;ginas da <abbr title="World Wide Web">Web</abbr> interativas e &eacute; uma parte essencial dos apllicativos da <abbr title="World Wide Web">Web</abbr>. A maioria dos sites o utiliza
+                                        para o comportamneto da p&aacute;gina do lado do cliente, e todos os principais navegadores da <abbr title="World Wide Web">Web</abbr> possuem um mecanismo Javascript dedicado a eecuta-lo.
+                                    </p>
+
+                                    <p>
+                                        &ensp;Como uma linguagem de m&uacute;ltiplos paradigmas, o JavaScript suporta estilos de programa&ccedil;&atilde;o orientados a eventos, funcionais e imperativos.
+                                        <br /> Possui interfaces de programa&ccedil;&atilde;o de aplicativos &#40; <abbr title="Application Programming Interface">APIs</abbr>&#41; para trabalhar com textos, datas, express&otilde;es regulares, struturas
+                                        de dados padr&otilde;es e o
+                                        <abbr title="Document Object Model">DOM</abbr> &#40;Document Object Model&#41;. No etntanto, a pr&oacute;pria linguagem n&atilde;o inclui nenhuma entrada &#47; saida &#40;E &#47;S&#41;, como rede, armazenamento
+                                        ou recursos gr&acute;ficos, pois o ambiente host &#40;geralmente um navegador da <abbr title="World Wide Web">Web</abbr>&#41; fornece essas <abbr title="Application Programming Interface">APIs</abbr>&#41;.
+                                    </p>
+
+                                    <p>
+                                        &ensp;Os mecanismos JavaScript foram originalmente usados apenas em navegadores da
+                                        <abbr title="World Wide Web">Web</abbr>, mas agora est&atilde;o incorporados em alguns servidores, geralmente via Node.Js. Eles tamb&eacute;m s&atilde;o incorporados a uma variedade de aplicativos criados com estruturas
+                                        como
+                                        <span lang="en-US">Electron</span> e Cordova.
+                                    </p>
+
+                                    <p>
+                                        &ensp;Embora exista semelhan&ccedil;a entre JavaScript e Java, incluindo nome da linguagem, sintaxe e respectivas bibliotecas padr&atilde;o, os dois idiomas s&atilde;o distintos e diferem bastante no disign.
+                                    </p>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="nav-item nav-link" href="#">
+
+                    <button class="btn btn-primary" id="btn-introduction-applications">Aplica&ccedil;&otilde;es</button>
+
+                    <div class="modal fade" id="modal-introduction-applications">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                                    <h4 class="modal-title">Fundamentos JavaScript</h4>
+                                </div>
+                                <div class="modal-body">
+
+                                    <h2>Aplica&ccedil;&otilde;es</h2>
+
+                                    <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
+
+                                    <h3>JavaScript tem um grande n&uacute;mero de aplica&ccedil;&otilde;es. Alguns deles s&atilde;o&#58;
+                                    </h3>
+
+                                    <ol>
+                                        <li>
+                                            <h4>Desenvolvimento <abbr title="World Wide Web">Web</abbr>.</h4>
+                                            <p>
+                                                &ensp;JavaScript &eacute; uma linguagem de script de cliente usada para criar p&aacute;ginas da <abbr title="World Wide Web">Web</abbr>. &eacute; uma linguagem independente desenvolvida pela Netscape. &eacute;
+                                                usado quando uma p&aacute;gina da <abbr title="World Wide Web">Web</abbr> deve ser din&acirc;mica e adiciona efeitos especiais em p&aacute;ginas, como&#58; rollover, rollout e muitos tipos de gr&aacute;ficos.
+                                                &eacute; usado principalmente por todos os sites para fins de valida&ccedil;&atilde;o.
+                                            </p>
+                                        </li>
+
+                                        <li>
+                                            <h4>Aplicativos da <abbr title="World Wide Web">Web</abbr></h4>
+                                            <p>
+                                                &ensp;Com a tecnologia, navegadores e computadores pessoias melhoram na medida em que eram necess&aacute;rio uma linguagem para criar aplicativos
+                                                <abbr title="World Wide Web">Web</abbr> robustos. O JavaScript usa interfaces de programa&ccedil;&atilde;o de aplicativos &#40;<abbr title="Application Programming Interface">APIs</abbr>&#41; que fornecem
+                                                poders extras ao c&oacute;digo.
+                                            </p>
+                                        </li>
+
+                                        <li>
+                                            <h4>Apresenta&ccedil;&otilde;es</h4>
+
+                                            <p>
+                                                &ensp;O JavaScript tamb&eacute;m oferece a facilidade de criar apresenta&ccedil;&otilde;es como um site. O JavaScript fornece a bibliotecas&#58; RevealJS e BespokeJS para criar um <span lang="en-US">Deck</span>                                                de slides baseados na <abbr title="World Wide Web">Web</abbr>. O Reavel.js cria alguns dos
+                                                <span lang="en-US">decks</span> mais bonitos e interativos usando <abbr title="HyperText Markup Language">HTLM</abbr>.
+                                            </p>
+                                        </li>
+
+                                        <li>
+                                            <h4>Aplicativos de servidor</h4>
+
+                                            <p>
+                                                &ensp;O <abbr title="JavaScript">JS</abbr> &eacute; criado no tempo de execu&ccedil;&atilde;o JavaScript do Chrome para criar aplicativos de rede escal&aacute;veis e r&aacute;pidos. Ele usa aplicativos controlados
+                                                por eventos, leves e eficientes, que devem ser distribuidos pelos sistemas com a ajuda de um navegador.
+                                            </p>
+                                        </li>
+
+                                        <li>
+                                            <h4>Servidores da <abbr title="World Wide Web">Web</abbr></h4>
+
+                                            <p>
+                                                &ensp;Usando o <abbr title="JavaScript">JS</abbr>, um servidor da <abbr title="World Wide Web">Web</abbr> pode ser criado. As vantagens do <abbr title="JavaScript">JS</abbr> &eacute; que ele &eacute; orientado
+                                                a objetos e n&atilde;o esperaria pela resposta da chamada anterior. Ele passa para a pr&oacute;xima chamada e aproveita os eventos para receber notifica&ccedil;&otilde;es quando uma resposta &eacute; recebida
+                                                para a chamada anterior. Os servidores criados no <abbr title="JavaScript">JS</abbr> s&atilde;o muito r&aacute;pidos e n&atilde;o usam buffer e transferem peda&ccedil;os de dados. Al&eacute;m disso, ele
+                                                &eacute; de
+                                                <span lang="en-US">threaded</span> <span lang="en-US">&#40;JavaScript
+                                                            &eacute; single threaded&#41;</span> &uacute;nico com <span lang="en-US">loop</span> de eventos. Apenas uma coisa pode acontecer por vez, em uma &uacute;nica
+                                                <span lang="en-US">thread</span> principal, e tudo &eacute; bloqueado at&eacute; que a opera&ccedil;&atilde;o seja concluída.
+                                            </p>
+                                        </li>
+
+                                        <li>
+                                            <h4><span lang="en-US">Games</span></h4>
+
+                                            <p>
+                                                &ensp;JavaScript tamb&eacute;m ajuda na cria&ccedil;&atilde;o de jogos para lazer. A combina&ccedil;&atilde;o de JavaScript e <abbr title="HyperText Markup Language">HTLM</abbr> tamb&eacute;m torna o JavaScript
+                                                popular no desenvolvimento de jogos. Ele fornece a biblioteca Ease.JS, que fornece solu&ccedil;&otilde;es simples para trabalhar com gr&aacute;ficos avan&ccedil;ados.
+                                            </p>
+                                        </li>
+
+                                        <li>
+                                            <h4>Arte</h4>
+
+                                            <p>
+                                                &ensp;Usar o <abbr title="HyperText Markup Language">HTLM5</abbr> em JavaScript desenhando gr&aacute;ficos em uma p&aacute;gina da <abbr title="World Wide Web">Web</abbr> &eacute; teoricamente f&aacute;cil.
+                                                Todas as formas bidimensionais e tridimensionais podem ser facilmente desenhadas em uma tela e isso abriu o navegador como um novo meio para todos os diferentes projetos de arte digital.
+                                            </p>
+                                        </li>
+
+                                        <li>
+
+                                            <h4>Aplica&ccedil;&atilde;o <span lang="en-US">Smartwatch</span></h4>
+                                            <p>
+                                                &ensp;JavaScript, &eacute; a linguagem mais usada, isso porque esta sendo usado em todos os dispositivos e aplicativos possiveis. O uso do JavaScript fornece a biblioteca Pebble.JS, usada em aplicativos
+                                                <span lang="en-US">Smartwatch</span>.
+                                            </p>
+                                        </li>
+                                    </ol>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <img src="../../img/introductions.png" alt="logo do Javascript" class="img-body">
+
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(function() {
+            $("#btn-introduction-history").click(function() {
+                $("#modal-introduction-history").modal();
+            });
+        });
+
+        $(function() {
+            $("#btn-introduction-introduction").click(function() {
+                $("#modal-introduction-introduction").modal();
+            });
+        });
+
+        $(function() {
+            $("#btn-introduction-applications").click(function() {
+                $("#modal-introduction-applications").modal();
+            });
+        });
+    </script>
+</body>
+</body>
+
+</html>

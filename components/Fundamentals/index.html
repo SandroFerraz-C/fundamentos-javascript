@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../../index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon">Fundamentos do JavaScript</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+            <div class="navbar-nav">
+
+                <a class="nav-item nav-link" href="#"><button class="btn btn-primary"
+                        id="btn-fundamentals-variable">Vari&aacute;veis</button>
+                    <div class="modal fade" id="modal-fundamentals-variable">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                                    <h4 class="modal-title">Fundamentos JavaScript</h4>
+                                </div>
+
+                                <div class="modal-body ">
+
+                                    <h2>Criando vari&aacute;veis no JavaScript</h2>
+
+                                    <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
+
+                                    <p>
+                                        &ensp;As vari&aacute;veis podem ser ensinadas como recipientes onde os valores
+                                        podem ser armazenados. Valores vari&aacute;veis, como o pr&oacute;prio nome
+                                        sugere, podem mudar ao longo do programa. A palavra-chave
+                                        <code>&#39;var&#39;</code> &eacute; usada para declarar vari&aacute;veis de
+                                        seguinte maneira&#58;
+                                    </p>
+
+                                    <div class="content">
+                                        <pre>
+                                     <code>
+                                      <p>var minha&#95;variavel &#61; 5&#59;</p>
+            
+                                        <p>document&#46;write&#40;minha&#95;variavel&#41;&#59;</p>
+                                  </code>
+                                  </pre>
+                                        <p>Resultado&#58; 5</p>
+                                    </div>
+
+                                    <p>
+                                        &ensp;No c&oacute;digo acima, usamos a palavra-chave <code>&#39;var&#39;</code>
+                                        para declarar uma vari&aacute;vel chamada
+                                        <code>&#39;minha&#95;variavel&#39;</code> e atribu&aacute;-la um valor de 5.
+                                    </p>
+
+                                    <p>
+                                        &ensp;As seguintes regras devem ser seguidas ao declarar uma
+                                        vari&aacute;vel&#58;
+                                    </p>
+
+                                    <ol>
+                                        <li>
+                                            O nome da vari&aacute;vel deve come&ccedil;ar com uma letra, um
+                                            sumblinhado&#40; &#95; &#41; ou um cifr&atilde;o &#40; $ &#41;. Os
+                                            caracteres de nome subsequentes podem ser letras, d&aacute;gitos,
+                                            sublinhados ou cifr&otilde;es.</li>
+
+                                        <li>O nome n&atilde;o deve conter espa&ccedil;os.</li>
+
+                                        <li>O nome n&atilde;o pode come&ccedil;ar com um numero.</li>
+
+                                        <li>O nome n&atilde;o pode incluir s&aacute;mbolos matem&aacute;ticos ou
+                                            qualquer cracter especial como&#58; &#39;&#43;&#39;, &#39;&#37;&#39;,
+                                            &#39;&#33;&#39;, &#39;&#42;&#39; e etc.
+                                        </li>
+
+                                        <li>Certos nomes s&atilde;o reservdos do <abbr title="JavaScript">JS</abbr> como
+                                            palavras-chaves e n&atilde;o podem ser usados, como&#58; &#39;<span
+                                                lang="en-US">avstract</span>&#39;, &#39;<span
+                                                lang="en-US">arguments</span>&#39;,
+                                            &#39; <span lang="en-US">true</span>&#39;, &#39;<span
+                                                lang="en-US">wrile</span>&#39; e muitas outras.</li>
+                                    </ol>
+
+                                    <p>Consulte outras palavras reservadas em&#58; <a
+                                            href="https://www.w3bai.com/pt/js/js_reserved.html"
+                                            target="_blank">w3bai.com</a></p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+        </div>
+        </div>
+        </a>
+
+        <a class="nav-item nav-link" href="#"> <button class="btn btn-primary" id="btn-fundamentals-data-type">Tipo de Dados</button>
+            <div class="modal fade" id="modal-fundamentals-data-type">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                            <h4 class="modal-title">Fundamentos JavaScript</h4>
+                        </div>
+
+                        <div class="modal-body ">
+
+                            <h2>Tipo de Dados</h2>
+
+                            <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
+
+                            <p>
+                                &ensp;Os tipos de dados referem-se aos tipos de valores que um programa pode armazenar e usar. <abbr title="JavaScript">JS</abbr> suporta tipos de dados como n&uacute;meros, <span lang="en-US">strings</span>, <span lang="en-US">boolenos</span>,
+                                <span lang="en-US">arrays</span> e etc.
+                            </p>
+
+                            <p>Segue alguns exemplos&#58;</p>
+
+                            <div class="content">
+                                <pre>
+                             <code>
+                              <p>var minha&#95;num &#61; 5&#59;</p>
+                              <p>var minha&#95;float&#95;num  &#61; 5.5&#59;</p>
+                              <p>var minha&#95;string &#61; &#39;Ol&aacute;&#39;&#59;</p>
+                              <p>var minha&#95;boolean&#95;1 &#61; true&#59;</p>
+                              <p>var minha&#95;boolean&#95;2 &#61; false&#59;</p>
+
+                          </code>
+                          </pre>
+                            </div>
+
+                            <p>
+                                &ensp;Em <abbr title="JavaScript">JS</abbr>, existem n&uacute;meros com pontos decimais ou sem, ao contr&aacute;rio dos tipos de n&uacute;meros como inteiro,
+                                <span lang="en-US">float</span>, <span lang="en-US">double</span> e etc.
+                            </p>
+
+                            <p>
+                                &ensp;Variav&eacute;is do tipo <span lang="en-US">strings</span> s&atilde;o declaradas em volta de aspas simples &#40;&#39;&#41; ou aspas duplas &#40;&#34;&#41;.
+                            </p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a class="nav-item nav-link" href="#"><button class="btn btn-primary"
+                        id="btn-fundamentals-assignment-operators">Operadores de
+                        Atribui&ccedil;&atilde;o</button>
+                    <div class="modal fade" id="modal-fundamentals-assignment-operators">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                                    <h4 class="modal-title">Fundamentos JavaScript</h4>
+                                </div>
+
+                                <div class="modal-body ">
+
+                                    <h2>Operadores de Atribui&ccedil;&atilde;o</h2>
+
+                                    <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
+
+                                    <p>
+                                        &ensp;Operadores de atribui&ccedil;&atilde;o s&atilde;o usados para atribuir
+                                        valores a vari&aacute;veis <abbr title="JavaScript">JS</abbr>
+                                    </p>
+
+                                    <p>Segue alguns exemplos&#58;</p>
+
+                                    <div class="content">
+                                        <table border="1">
+
+                                            <tr>
+                                                <td>Operador</td>
+                                                <td>Exemplo</td>
+                                                <td>Equivalente a&#58;</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>&#61;</td>
+                                                <td>x&#61;y</td>
+                                                <td>x&#61;y</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>&#43;&#61;</td>
+                                                <td>x&#43;&#61;y</td>
+                                                <td>x&#61;x&#43;y</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>&#45;&#61;</td>
+                                                <td>x&#45;&#61;y</td>
+                                                <td>x&#61;x&#45;y</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>&#42;&#61;</td>
+                                                <td>x&#42;&#61;y</td>
+                                                <td>x&#61;x&#43;y</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>&#47;&#61;</td>
+                                                <td>x&#47;&#61;y</td>
+                                                <td>x&#61;x&#47;y</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>&#37;&#61;</td>
+                                                <td>x&#37;&#61;y</td>
+                                                <td>x&#61;x&#37;y</td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+        <a class="nav-item nav-link disabled" href="#"><button class="btn btn-primary"
+                        id="btn-fundamentals-mathematical-operators">Operadores
+                        Matem&aacute;ticos</button>
+                    <div class="modal fade" id="modal-fundamentals-mathematical-operators">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                                    <h4 class="modal-title">Fundamentos JavaScript</h4>
+                                </div>
+
+                                <div class="modal-body ">
+
+                                    <h2>Operadores Matem&aacute;ticos</h2>
+
+                                    <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
+
+                                    <p>
+                                        &ensp;Operadores matem&aacute;ticos s&atilde;o usados para executar
+                                        opera&ccedil;&otilde;es aritim&eacute;ticas.
+                                    </p>
+
+                                    <p>Segue alguns exemplos&#58;</p>
+
+                                    <div class="content">
+                                        <table border="1">
+
+                                            <tr>
+                                                <td>Operador</td>
+                                                <td>Descri&ccedil;&atilde;o</td>
+                                                <td>Exemplo</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>&#43;</td>
+                                                <td>Adi&ccedil;&atilde;o</td>
+                                                <td>x&#43;y</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>&#45;</td>
+                                                <td>Subtra&ccedil;&atilde;o</td>
+                                                <td>x&#45;y</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>&#42;</td>
+                                                <td>Multiplica&ccedil;&atilde;o</td>
+                                                <td>x&#42;y</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>&#47;</td>
+                                                <td>Divis&atilde;o</td>
+                                                <td>x&#47;y</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>&#42;&#42;</td>
+                                                <td>Desligar</td>
+                                                <td>x&#42;&#42;y &#40;x ao poderde y&#41;</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>&#37;</td>
+                                                <td>M&oacute;dulo</td>
+                                                <td>x&#37;y &#40;Retorna o restante da divis&atilde;o&#41;</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>&#43;&#43;</td>
+                                                <td>Incremento de 1</td>
+                                                <td>x&#43;&#43;</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>&#45;&#45;</td>
+                                                <td>Decremento</td>
+                                                <td>x&#45;&#45;</td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+        <a class="nav-item nav-link disabled" href="#"><button class="btn btn-primary"
+                        id="btn-fundamentals-comparison-operator">Operadores de
+                        Compara&ccedil;&atilde;o</button>
+                    <div class="modal fade" id="modal-fundamentals-comparison-operator">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                                    <h4 class="modal-title">Fundamentos JavaScript</h4>
+                                </div>
+
+                                <div class="modal-body ">
+
+                                    <h2>Operadores de Compara&ccedil;&atilde;o</h2>
+
+                                    <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
+
+                                    <p>
+                                        &ensp;Os Operadores de compara&ccedil;&atilde;o podem ser usados para comparar
+                                        duas vari&aacute;veis ou valores. A sa&iacute;da desse c&oacute;digo &eacute;
+                                        verdadeiro ou falso &#40;
+                                        <code>true</code> ou <code>false</code> &#41; &#40;1 ou 0&#41;.
+                                    </p>
+
+                                    <p>Segue alguns exemplos&#58;</p>
+
+                                    <div class="content">
+                                        <table border="1">
+
+                                            <tr>
+                                                <td>Operador</td>
+                                                <td>Descri&ccedil;&atilde;o</td>
+                                                <td>Exemplo</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>&#61;&#61;</td>
+                                                <td>Igual a</td>
+                                                <td>1&#45;&#45;2 &#40;<code>false</code>&#41;</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>&#61;&#61;&#61;</td>
+                                                <td>Id&ecirc;ntico a</td>
+                                                <td>1&#61;&#61;&#61;1 &#40;<code>true</code>&#41;</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td>1&#61;&#61;&#61;&#39;1&#39; &#40;<code>false</code>&#41;</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>&#33;&#61;</td>
+                                                <td>N&atilde;o Igual</td>
+                                                <td>5&#33;&#61;10 &#40;<code>false</code>&#41;
+                                                </td><code>true</code>&#41;</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>&#33;&#61;&#61;</td>
+                                                <td>N&atilde;o Id&ecirc;ntico</td>
+                                                <td>5&#33;&#61;&#61;5&#40;<code>false</code>&#41;</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td>5&#33;&#61;&#61;&#39;5&#39;&#40;<code>true</code>&#41;</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>&#62;</td>
+                                                <td>Maior que</td>
+                                                <td>10&#62;5 &#40;<code>true</code>&#41;</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>&#60;</td>
+                                                <td>Menor que</td>
+                                                <td>1 &#60; 3 &#40;<code>true</code>&#41;</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>&#60;&#61;</td>
+                                                <td>Menor ou igual a</td>
+                                                <td>1 &#60;&#61;3 &#40;<code>true</code>&#41;</td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+        <a class="nav-item nav-link disabled" href="#"> <button class="btn btn-primary" id="btn-fundamentals-logical-operators">Operadores L&oacute;gicos</button>
+            <div class="modal fade" id="modal-fundamentals-logical-operators">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                            <h4 class="modal-title">Fundamentos JavaScript</h4>
+                        </div>
+
+                        <div class="modal-body ">
+
+                            <h2>Operadores L&oacute;gicos</h2>
+
+                            <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
+
+                            <p>
+                                &ensp;Esses operadores s&atilde;o usados para avaliar, expressar e retornar
+                                <code>True</code> ou <code>False</code>.
+                            </p>
+
+                            <p>Segue alguns exemplos&#58;</p>
+
+                            <div class="content">
+                                <table border="1">
+
+                                    <tr>
+                                        <td>Operador</td>
+                                        <td>Descri&ccedil;&atilde;o</td>
+                                        <td>Exemplo</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>&#38;&#38;</td>
+                                        <td>Retorna <code>True</code> se os 2 operandos forem <code>True</code>
+                                        </td>
+                                        <td>2 &#62; 1 &#38;&#38; 2 &#60; 3 &#40;<code>True</code>&#41;</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>&#124;</td>
+                                        <td>Retorna <span lang="en-US">True</span> se 1 dos operandos forem
+                                            <code>True</code>
+                                        </td>
+                                        <td>1 &#60; 3 &#124; 3 &#60; 1 &#40;<code>true</code>&#41;</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>&#33;</td>
+                                        <td>Retorna <span lang="en-US">True</span> se o operando for code>False
+                                            </code> e retorna <code>False</code> se o operando for
+                                            <code>True</code>
+                                        </td>
+                                        <td>&#33; &#40;2 &#60; 3 &#41; &#40;<code>false</code>&#41;</td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a class="nav-item nav-link disabled" href="#"> <button class="btn btn-primary" id="btn-fundamentals-strins-operators">Operadores de <span lang="en-US">Strings</span></button>
+            <div class="modal fade" id="modal-fundamentals-strins-operators">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+                            <h4 class="modal-title">Fundamentos JavaScript</h4>
+                        </div>
+
+                        <div class="modal-body ">
+
+                            <h2>Operadores de <span lang="en-US">Strings</span></h2>
+
+                            <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
+
+                            <p>&ensp;As cadeiras podem ser unidas usando o operador &#40; &#43; &#41;.</p>
+
+                            <p>Segue exemplo&#58;</p>
+
+                            <div class="content">
+                                <pre>
+                            <code>
+                                <p>var strings&#95;1 &#61; &#34;Meu nome &eacute; &#34;</p>
+                                <p>var strings&#95;2 &#61; &#34;Sandro Ferraz&#34;</p>
+
+                                <p>var strings&#95;3 &#61; strings&#95;1 &#43; strings&#95;2&#59;</p>
+                                
+                                <p>document&#46;write&#40;strings&#95;3&#41;&#59;</p>
+
+                                <p>&#47;&#47; Output&#58; Meu nome &eacute; Sandro Ferraz&#59;</p>
+
+                            </code>
+                        </pre>
+                            </div>
+
+                            <p>
+                                &ensp;No c&oacute;digo acima, <span lang="en-US">strings</span>&#95;3 &eacute; criada adicionando a <span lang="en-US">strings</span>&#95;1 com a <span lang="en-US">strings</span>&#95;2.
+                            </p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        </div>
+        </div>
+    </nav>
+
+    <img src="../../img/fundamentos.png" alt="Imagem de ilustração JavaScript" class="img-body">
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function() {
+            $("#btn-fundamentals-variable").click(function() {
+                $("#modal-fundamentals-variable").modal();
+            });
+        });
+
+        $(function() {
+            $("#btn-fundamentals-data-type").click(function() {
+                $("#modal-fundamentals-data-type").modal();
+            });
+        });
+
+        $(function() {
+            $("#btn-fundamentals-assignment-operators").click(function() {
+                $("#modal-fundamentals-assignment-operators").modal();
+            });
+        });
+
+        $(function() {
+            $("#btn-fundamentals-mathematical-operators").click(function() {
+                $("#modal-fundamentals-mathematical-operators").modal();
+            });
+        });
+
+        $(function() {
+            $("#btn-fundamentals-comparison-operator").click(function() {
+                $("#modal-fundamentals-comparison-operator").modal();
+            });
+        });
+
+        $(function() {
+            $("#btn-fundamentals-logical-operators").click(function() {
+                $("#modal-fundamentals-logical-operators").modal();
+            });
+        });
+
+        $(function() {
+            $("#btn-fundamentals-strins-operators").click(function() {
+                $("#modal-fundamentals-strins-operators").modal();
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

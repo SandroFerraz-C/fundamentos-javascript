@@ -1,0 +1,200 @@
+nav {
+    background-color: #ccc;
+}
+
+span {
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-bottom: 10%;
+}
+
+#navbarNavAltMarkup {
+    margin-left: 7%;
+}
+
+.btn {
+    margin-bottom: 1%;
+}
+
+.navbar-toggler {
+    margin-top: 1%;
+}
+
+.img-body {
+    width: 100%;
+    height: 550px;
+}
+
+.img-logo {
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+
+.criando-codigo-js {
+    font-size: 14px;
+}
+
+.arquivo-externo {
+    font-size: 14px;
+}
+
+.comentario {
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 320px) {
+    #navbarNavAltMarkup {
+        margin-left: 7%;
+    }
+    .navbar-toggler {
+        width: 90%;
+        margin-left: 4%;
+        margin-top: 1%;
+        border-radius: 5px;
+    }
+    .navbar {
+        margin-bottom: 0;
+    }
+    .btn {
+        margin-bottom: 1%;
+    }
+    .img-body {
+        height: 450px;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    #navbarNavAltMarkup {
+        margin-left: 13%;
+    }
+    .navbar-toggler {
+        width: 90%;
+        margin-left: 4%;
+        margin-top: 1%;
+        border-radius: 5px;
+    }
+    .navbar {
+        margin-bottom: 0;
+    }
+    .btn {
+        margin-bottom: 1%;
+    }
+    .img-body {
+        height: 450px;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    #navbarNavAltMarkup {
+        margin-left: 17%;
+    }
+    .navbar-toggler {
+        width: 90%;
+        margin-left: 4%;
+        margin-top: 1%;
+        border-radius: 5px;
+    }
+    .navbar {
+        margin-bottom: 0;
+    }
+    .btn {
+        margin-bottom: 1%;
+    }
+    .img-body {
+        height: 500px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #navbarNavAltMarkup {
+        margin-top: 2%;
+        margin-left: 13%;
+    }
+    .navbar-toggler {
+        width: 70%;
+        margin-left: 4%;
+        margin-top: 3%;
+        border-radius: 5px;
+    }
+    .navbar {
+        margin-bottom: 0;
+    }
+    .btn {
+        margin-bottom: 1%;
+    }
+    .img-body {
+        height: 450px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #navbarNavAltMarkup {
+        margin-top: 2%;
+        margin-left: 20%;
+    }
+    .navbar-toggler {
+        width: 70%;
+        margin-left: 4%;
+        margin-top: 3%;
+        border-radius: 5px;
+    }
+    .navbar {
+        margin-bottom: 0;
+    }
+    img {
+        height: 1000px;
+    }
+    .btn {
+        margin-bottom: 1%;
+    }
+    .img-body {
+        height: 450px;
+    }
+}
+
+@media only screen and (min-width: 1240px) {
+    #navbarNavAltMarkup {
+        margin-top: 2%;
+        margin-left: 27%;
+    }
+    .navbar-toggler {
+        width: 70%;
+        margin-left: 4%;
+        margin-top: 3%;
+        border-radius: 5px;
+    }
+    .navbar {
+        margin-bottom: 0;
+    }
+    .btn {
+        margin-bottom: 1%;
+    }
+    .img-body {
+        height: 580px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    #navbarNavAltMarkup {
+        margin-top: 2%;
+        margin-left: 27%;
+    }
+    .navbar-toggler {
+        width: 70%;
+        margin-left: 4%;
+        margin-top: 3%;
+        border-radius: 5px;
+    }
+    .navbar {
+        margin-bottom: 0;
+    }
+    img {
+        height: 1000px;
+    }
+    .btn {
+        margin-bottom: 1%;
+    }
+}
