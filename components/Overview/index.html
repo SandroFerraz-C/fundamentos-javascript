@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="../../index.html">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+        <button class="navbar-toggler btn btn-primary" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
           <span class="navbar-toggler-icon">visao geral</span>
         </button>
 
@@ -46,7 +46,7 @@
                                                 <p> &#60;&#47;head&#62;</p>            
                                                 <p> &#60;body&#62;</p>
                                                 <p> &#60;script&#62;</p>      
-                                                <p>  document&#46;write&#40;&#34;Ola Mundo&#33;&#34;&#41;&#59;</p> 
+                                                <p>  document&#46;write&#40;&#34;Ol&aacute; Mundo&#33;&#34;&#41;&#59;</p> 
                                                 <p> &#60;&#47;script&#62;</p>
                                                 <p>&#60;&#47;body&#62;</p>
                                             </code>
@@ -56,7 +56,7 @@
                                     </div>
 
                                     <p>
-                                        &ensp;No c&oacute;digo acima, o c&oacute;digo <abbr title="JavaScript">JS</abbr> est&aacute; inclu&iacute;do entre a tag <code>&#60;script&#62;</code>. <br /> O m&eacute;todo <code>document&#46;write&#40;&#41;</code>                                        &oacute; usado para imprimir na tela.
+                                        &ensp;No c&oacute;digo acima, o c&oacute;digo <abbr title="JavaScript">JS</abbr> est&aacute; inclu&iacute;do entre a tag <code>&#60;script&#62;</code>. <br /> O m&eacute;todo <code>document&#46;write&#40;&#41;</code>                                        &eacute; usado para imprimir na tela.
                                     </p>
                                 </div>
 
@@ -84,9 +84,10 @@
                                     <img src="../../img/logo_js.svg" alt="logo do Javascript" class="img-logo" />
 
                                     <p>
-                                        &ensp;Como o c&oacute;digo <abbr title="JavaScript">JS</abbr> e <abbr title="HyperText Markup Language">HTLM5</abbr> pode ficar longo e complexo, podemos dividir os adicionando o c&oacute;digo JavaScript como um
-                                        arquivo &#46;js externo. Vamos adicionar um arquivo &#46;js que comt&eacute;m o seguinte c&oacute;digo ao nosso <abbr title="HyperText Markup Language">html</abbr>&#58;
-                                        <code>document&#46;write&#40;&#34;Ol&oacute;  arquivo <abbr title="JavaScript">JS</abbr> externo&#33;&#34;&#41;&#59;</code>
+                                        &ensp;Como o c&oacute;digo <abbr title="JavaScript">JS</abbr> e <abbr title="HyperText Markup Language">HTLM5</abbr> pode ficar longo e complexo, podemos dividir adicionando o c&oacute;digo JavaScript como um arquivo
+                                        <code>.js</code> externo. Vamos adicionar um arquivo <code>.js</code> que comt&eacute;m o seguinte c&oacute;digo ao nosso <abbr title="HyperText Markup Language">html</abbr>&#58;<br />
+
+                                        <code>document&#46;write&#40;&#34;Ol&aacute;  arquivo <abbr title="JavaScript">JS</abbr> externo&#33;&#34;&#41;&#59;</code>
                                     </p>
 
                                     <div class="content">
@@ -96,14 +97,14 @@
                                                 <p>&ensp;&#60;head&#62;</p>
                                                 <p>&ensp;&#60;&#47;head&#62;</p>
                                                 <p>&#60;body&#62;</p>
-                                                <p>&ensp;&ensp;&ensp;&#60;script&#61; &#34;my&#95;javascript&#46;js&#62;</p>                        
+                                                <p>&ensp;&ensp;&ensp;&#60;script&#61; &#34;my&#95;javascript&#46;js&#34;&#62;</p>                        
                                                 <p>&ensp;&ensp;&ensp;&ensp;&#60;&#47;script&#62;</p>
                                                 <p>&ensp;&ensp;&#60;&#47;body&#62;</p>
                                             </code>
                                         </pre>
                                     </div>
 
-                                    <p>Resultado&#58; Ol&aacute; Mundo&#41;</p>
+                                    <p>Resultado&#58; &#40;&#34;Ol&aacute; arquivo <abbr title="JavaScript">JS</abbr> externo&#33;&#34;&#41;&#59;</p>
 
                                     <p>
                                         &ensp;Usamos o atributo <code>&#39;src&#39;</code> para fazer refer&ecirc;ncia a um arquivo javascrit externo, no caso do exemplo acima chamado de &#39;my&#95;javascript&#46;js&#39;. Lembre-se de incluir o arquivo
